@@ -1,0 +1,48 @@
+body {
+  background: rgba(200, 200, 200, 1);
+}
+
+.content {
+  background-image: url('background.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 200px;
+  font-family: Montserrat;
+  animation: animate 32s linear infinite;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px 30px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  /* box-shadow: -7px -7px 20px 0 rgba(0, 0, 0, 0.2) inset,
+    7px 7px 20px 0 rgba(200, 200, 200, 0.2) inset;
+  border-radius: 5px; */
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 100px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: center 25%;
+  }
+  /* 25% {
+    background-position: 25% center;
+  } */
+  50% {
+    background-position: 75% center;
+  }
+  100% {
+    background-position: center 25%;
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #ttt-game {
+        display: grid;
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 5px;
+      }
+      #ttt-game div {
+        font-size: 3em;
+        text-align: center;
+        background: #eee;
+        padding: 50px;
+      }
+      #ttt-game div.player {
+        background: #c2e3ff;
+      }
+      #ttt-game div.computer {
+        background: #ffebeb;
+      }
+    </style>
+    <script src="ttt.js"></script>
+  </head>
+  <body>
+    <div id="ttt-game"></div>
+  </body>
+</html>

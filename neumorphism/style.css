@@ -1,0 +1,80 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.main > div {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+button {
+  border: none;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+input {
+  margin: 20px;
+  padding: 0 1rem;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  width: 20rem;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+.dark {
+  background-color: #20222d;
+}
+.dark > button {
+  background-color: #242733;
+}
+.dark > input {
+  color: #cfcebc;
+  background-color: #1c1d27;
+}
+
+.light {
+  background-color: #cfcebc;
+}
+.light > button {
+  background-color: #dad9cb;
+}
+.light > input {
+  color: #20222d;
+  background-color: #c4c3ad;
+}
+
+.neu.raised {
+  box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 0.05),
+    10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.neu.sunken {
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.05) inset,
+    5px 5px 20px 0px rgba(0, 0, 0, 0.2) inset;
+}

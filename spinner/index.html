@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Wagwan!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit
+        quasi earum a illum? Vel!
+      </p>
+    </div>
+  </body>
+  <script>
+    document.querySelector('.main p').style.display = 'none';
+    document.querySelector('.main').classList.add('spinner-3');
+
+    setTimeout(() => {
+      document.querySelector('.main').classList.remove('spinner-3');
+      document.querySelector('.main p').style.display = 'block';
+    }, 3000);
+  </script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Brad Mehder is a permanent traveller who offers web development, search engine optimization, and web hosting."
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#101010" />
+    <meta name="apple-mobile-web-app-title" content="Brad Mehder" />
+    <meta name="application-name" content="Brad Mehder" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#101010" />
+    <title>Brad Mehder - Traveler, Web Development, Web Hosting</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-21896166-24"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-21896166-24');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="./chimp.jpg" />
+      </div>
+      <h1>
+        Brad Mehder<br />
+        <span
+          class="txt-type"
+          data-wait="1500"
+          data-words='["Minimalist", "Digital Nomad", "WordPress", "Woocommerce", "Web Hosting", "SEO", "HTML5+CSS3+JavaScript"]'
+        ></span>
+      </h1>
+      <!-- <h2>This is my website.</h2> -->
+      <button id="modalBtn">Contact Me</button>
+    </div>
+
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Contact Me</h2>
+        </header>
+        <div class="modal-body">
+          <form
+            action="https://formspree.io/mzbelyay"
+            method="post"
+            role="form"
+          >
+            <div class="form-group">
+              <label> Name</label>
+              <input type="text" name="name" id="name" required="" />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" name="_replyto" id="email" required="" />
+            </div>
+
+            <!--
+              <div class="form-group">
+              <label>Phone</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            -->
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                rows="4"
+                name="message"
+                id="message"
+                required=""
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+        <footer class="modal-footer">
+          <!-- <h3>Modal Footer</h3> -->
+        </footer>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>

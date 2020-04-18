@@ -1,0 +1,45 @@
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+
+  label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+
+    &:focus {
+      outline: 0;
+      border-color: #777;
+    }
+  }
+
+  small {
+    color: $errorColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  .error small {
+    visibility: visible;
+  }
+}
+
+.form-control.success input {
+  border-color: $successColor;
+}
+
+.form-control.error input {
+  border-color: $errorColor;
+}

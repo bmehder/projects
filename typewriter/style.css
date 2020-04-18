@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200,100,400');
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background: #101010;
+  color: #fdc735;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 3rem;
+}
+
+.image {
+  margin: 0 auto 1rem;
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  border: 8px solid #202020;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 1),
+    -2px -2px 2px rgba(255, 255, 255, 0.3);
+}
+
+h1,
+h2 {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+h1 span {
+  color: #ccc;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #ccc;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #ccc;
+}
+
+button {
+  display: block;
+  width: 300px;
+  cursor: pointer;
+  background: #101010;
+  color: #404040;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 32px auto;
+  padding: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 1),
+    -2px -2px 2px rgba(102, 102, 102, 0.5);
+  outline: 0;
+}
+
+button:hover {
+  color: #505050;
+}
+
+h1 {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8),
+    -2px -2px 4px rgba(102, 102, 102, 0.5);
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h1 span {
+    font-size: 2rem;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #ccc;
+  margin: 10% auto;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.modal-header {
+  background: #202020;
+  padding: 15px;
+  color: #fff;
+}
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+  color: #fdc735;
+  font-weight: 400;
+}
+.modal-body {
+  padding: 10px 20px;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea,
+input[type='submit'] {
+  display: block;
+  width: 100%;
+}
+
+.form-group label {
+  color: #202020;
+  margin: 20px 0 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 0;
+  font-size: 16px;
+  border: 0;
+}
+
+input[type='submit'] {
+  margin: 20px 0;
+  padding: 1em;
+  background-color: #fdc735;
+  font-size: 20px;
+}
+
+.modal-footer {
+  min-height: 20px;
+  background: #202020;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+.closeBtn {
+  color: #fff;
+  float: right;
+  font-size: 30px;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  cursor: pointer;
+  color: #ccc;
+  text-decoration: none;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

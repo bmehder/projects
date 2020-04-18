@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'form-control';
+
+@mixin dizzeeRascall($align) {
+  display: flex;
+  align-items: $align;
+  justify-content: $align;
+}
+
+$successColor: #2ecc71;
+$errorColor: #e74c3c;
+$accentColor: #3498db;

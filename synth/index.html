@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>JSynthia</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>JSynthia</h1>
+        <div class="options">
+        <form>
+	       <p>Oscillator 1:</p>
+	        <select id="oscillator-one" >
+		        <option value="sine">Sine</option>
+		        <option value="square">Square</option>
+		        <option value="sawtooth">Sawtooth</option>
+		        <option value="triangle">Triangle</option>
+	        </select>
+	        <p>Oscillator 2:</p>
+	        <select id="oscillator-two" >
+		        <option value="sine">Sine</option>
+		        <option value="square">Square</option>
+		        <option value="sawtooth">Sawtooth</option>
+		        <option value="triangle">Triangle</option>
+	        </select>
+	        <p>Oscillator 3:</p>
+	        <select id="oscillator-three" >
+		        <option value="sine">Sine</option>
+		        <option value="square">Square</option>
+		        <option value="sawtooth">Sawtooth</option>
+		        <option value="triangle">Triangle</option>
+	        </select>
+	        <p>Chorus</p>
+	        <input id="chorus" type="range" name="points" min="0" max="10" value="0">
+        </form>
+        </div>
+        <div class="container">
+            <canvas id="oscilloscope"></canvas>
+            <div id="keyboard"></div>
+        </div>
+        <script src="qwerty-hancock.js"></script>
+        <script src="synth.js"></script>
+    </body>
+</html>
