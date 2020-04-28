@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Google Maps</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        const options = {
+          zoom: 18,
+          center: { lat: 42.419706, lng: 18.771515 },
+        };
+        const map = new google.maps.Map(
+          document.getElementById('map'),
+          options
+        );
+
+        const home = new google.maps.Marker({
+          position: options.center,
+          map: map,
+        });
+
+        const infoWindow = new google.maps.InfoWindow({
+          content: "<h4>Brad's Home</h4>",
+        });
+
+        home.addListener('click', () => {
+          infoWindow.open(map, home);
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClrVDQvLVbhYxzPpAeIcypWh4HrCnJa_Q&callback=initMap"
+    ></script>
+  </body>
+</html>
