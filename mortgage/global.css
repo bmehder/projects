@@ -1,0 +1,7 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
+  overflow: hidden;
+}
