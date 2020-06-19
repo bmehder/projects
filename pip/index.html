@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture In Picture</title>
+  </head>
+  <body>
+    <h1>Picture-In-Picture</h1>
+    <ul class="tsummary summary--with-divider">
+      <li>...allows video to pop out into a separate window for playback</li>
+      <li>
+        As of June 18, 2020, browser support is
+        <a href="https://caniuse.com/#feat=picture-in-picture" target="_blank"
+          >"not bad"</a
+        >.
+      </li>
+      <li>To use in the latest version of Chrome, you need to enable</li>
+      <li>the <code>chrome://flags/#enable-picture-in-picture</code> and</li>
+      <li><code>chrome://flags/#global-media-controls</code> flags,</li>
+      <li>and restart your browser.</li>
+    </ul>
+    <video
+      src="video.mp4"
+      id="myVideo"
+      class="controls"
+      type="video/mp4"
+      controls
+    ></video>
+    <div>
+      <button id="btnPip" class="button" type="button" style="display: none;">
+        Enter Picture-in-Picture
+      </button>
+    </div>
+    <script>
+      const myVideo = document.querySelector('#myVideo');
+      const btnPip = document.querySelector('#btnPip');
+
+      if ('pictureInPictureEnabled' in document) {
+        btnPip.style.display = null;
+        btnPip.addEventListener('click', (e) => {
+          if (document.pictureInPictureElement) {
+            document.exitPictureInPicture().catch((err) => {
+              console.log(err);
+            });
+            return;
+          }
+          myVideo.requestPictureInPicture().catch((err) => {
+            console.log(err);
+          });
+        });
+      }
+
+      myVideo.addEventListener('enterpictureinpicture', (e) => {
+        e.pictureInPictureWindow.addEventListener('resize', () => {
+          console.log(
+            `Window Size: ${e.pictureInPictureWindow.width}x${e.pictureInPictureWindow.height}`
+          );
+        });
+        btnPip.textContent = 'Close Picture-in-Picture';
+      });
+
+      myVideo.addEventListener('leavepictureinpicture', (e) => {
+        btnPip.textContent = 'Enter Picture-in-Picture';
+      });
+    </script>
+  </body>
+</html>
