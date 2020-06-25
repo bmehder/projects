@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI Component Library</title>
+    <style>
+      body {
+        font-size: 1.5rem;
+      }
+      .container {
+        margin: 40px;
+        margin-top: 60px;
+      }
+      button {
+        width: 200px;
+        background: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- tooltip -->
+      <h2>Tooltip</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto adipisci
+        modi vitae debitis voluptatibus, corrupti optio numquam sint dolore
+        deserunt possimus sed dolorem cupiditate natus nemo
+        <span class="tooltip" data-message="I'm a tooltip!">reprehenderit</span>
+        delectus iure officiis atque! Id aspernatur eveniet, quisquam iusto
+        exercitationem amet iure sunt molestiae quo consequuntur hic quia,
+        facere rem repellendus laudantium? Impedit!
+      </p>
+
+      <h2>Dropdowns</h2>
+      <div class="dropdown">
+        <div class="trigger">Awesome T-Shirt Designs</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad
+            vero sapiente eligendi, commodi cumque accusamus id repudiandae
+            atque. Sequi placeat eveniet enim, nemo provident consectetur
+            excepturi! Quam illum dignissimos temporibus molestias.
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="trigger">Cool Sticker Printing</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad
+            vero sapiente eligendi, commodi cumque accusamus id repudiandae
+            atque. Sequi placeat eveniet enim, nemo provident consectetur
+            excepturi! Quam illum dignissimos temporibus molestias.
+          </p>
+        </div>
+      </div>
+      <h2>Tabs</h2>
+      <!-- tabs -->
+      <div class="tabs">
+        <ul>
+          <li class="trigger active" data-target="#about">About</li>
+          <li class="trigger" data-target="#delivery">Delivery info</li>
+          <li class="trigger" data-target="#returns">Returns info</li>
+        </ul>
+        <div id="about" class="content active">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            suscipit assumenda mollitia nostrum atque facilis neque, non
+            blanditiis deleniti, ab numquam similique eligendi soluta
+            necessitatibus, ex quibusdam illum eaque voluptate.
+          </p>
+        </div>
+        <div id="delivery" class="content">
+          <h3>Delivery</h3>
+          <p>
+            Non blanditiis deleniti, ab numquam similique eligendi soluta
+            necessitatibus, ex quibusdam illum eaque voluptate.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Minima suscipit assumenda
+            mollitia nostrum atque facilis neque.
+          </p>
+        </div>
+        <div id="returns" class="content">
+          <h3>Returns</h3>
+          <p>
+            Adipisicing elit. Minima suscipit assumenda mollitia nostrum atque
+            facilis neque, non blanditiis deleniti, lorem ipsum dolor sit amet
+            consectetur ab numquam similique eligendi soluta necessitatibus, ex
+            quibusdam illum eaque voluptate.
+          </p>
+        </div>
+      </div>
+
+      <h2>Snackbar</h2>
+      <!-- snackbar -->
+      <div>
+        <button class="snackbar-trigger">click me</button>
+      </div>
+    </div>
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>
