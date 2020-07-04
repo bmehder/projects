@@ -32,43 +32,43 @@
   {
     "business": "Vettel's Violas",
     "address": "12 Ferrari St.",
-    "rating": 42,
+    "rating": 75,
     "cat": "Restaurant"
   },
   {
     "business": "Sainz's Sunglasses",
     "address": "99 Mexico St.",
-    "rating": 42,
+    "rating": 35,
     "cat": "Restaurant"
   },
   {
     "business": "Albon's Grocery",
     "address": "50 Red Bull Blvd.",
-    "rating": 42,
+    "rating": 90,
     "cat": "Restaurant"
   },
   {
     "business": "Perez Communications",
     "address": "42 Force Jordan Point ",
-    "rating": 42,
+    "rating": 70,
     "cat": "Restaurant"
   },
   {
     "business": "Riccardo Radios",
     "address": "McLaren Underground Labs",
-    "rating": 42,
+    "rating": 50,
     "cat": "Restaurant"
   },
   {
     "business": "Räikkönen Liquor Store",
     "address": "62 Alfa Romeo Way",
-    "rating": 42,
+    "rating": 75,
     "cat": "Restaurant"
   },
   {
     "business": "Kvyat Watt What?",
     "address": "23 Alpha Tauri Rd",
-    "rating": 42,
+    "rating": 40,
     "cat": "Restaurant"
   }
 ]
