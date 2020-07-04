@@ -70,5 +70,11 @@
     "address": "23 Alpha Tauri Rd",
     "rating": 40,
     "cat": "Electronics"
+  },
+  {
+    "business": "Bernie's Bathrooms",
+    "address": "100 Year Old Place",
+    "rating": 10,
+    "cat": "Retail"
   }
 ]
