@@ -1,0 +1,32 @@
+[
+  {
+    "business": "Great Store",
+    "address": "555 5th St",
+    "rating": 100,
+    "cat": "Retail"
+  },
+  {
+    "business": "Acme Store",
+    "address": "123 Fake St",
+    "rating": 32,
+    "cat": "Retail"
+  },
+  {
+    "business": "Earth Fare",
+    "address": "321 Real St",
+    "rating": 82,
+    "cat": "Grocery"
+  },
+  {
+    "business": "Orange Peel",
+    "address": "42 Meaning of Life Ave",
+    "rating": 66,
+    "cat": "Entertainment"
+  },
+  {
+    "business": "One Love",
+    "address": "23 Skadoo Lane",
+    "rating": 42,
+    "cat": "Restaurant"
+  }
+]
