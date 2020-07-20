@@ -37,7 +37,7 @@ body {
 }
 
 .earth:hover {
-  transform: scale(5);
+  transform: scale(3);
 }
 
 .earth::before {
@@ -50,10 +50,10 @@ body {
   background: url(cloud.png);
   background-size: cover;
   z-index: 1;
-  animation: animate 18s linear infinite;
+  animation: animate 12s linear infinite;
 }
 
-.earth img {
+.earth .plane {
   position: absolute;
   z-index: 2;
   transition: 0.5s;
@@ -61,6 +61,6 @@ body {
   transform: rotate(-90deg) scale(0.5);
 }
 
-.earth:hover img {
+.earth:hover .plane {
   transform: scale(0.2) rotate(-90deg);
 }
