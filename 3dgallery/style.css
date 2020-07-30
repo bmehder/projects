@@ -28,10 +28,12 @@ body {
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
+  transition: 0.3s;
   transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
 }
 
 .box.play {
+  /* transition: 0.3s; */
   animation: animate 20s linear infinite;
 }
 @keyframes animate {
