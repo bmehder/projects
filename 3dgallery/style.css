@@ -12,11 +12,22 @@ body {
   background: #000;
 }
 
+#play {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding: 1em 2em;
+}
+
 .box {
   position: relative;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+}
+
+.box.play {
   animation: animate 20s linear infinite;
 }
 @keyframes animate {

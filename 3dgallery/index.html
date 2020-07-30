@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button id="play">Play</button>
     <div class="box">
       <span style="--i: 1;"><img src="img1.jpg" alt="" /></span>
       <span style="--i: 2;"><img src="img2.jpg" alt="" /></span>
@@ -17,5 +18,22 @@
       <span style="--i: 7;"><img src="img7.jpg" alt="" /></span>
       <span style="--i: 8;"><img src="img8.jpg" alt="" /></span>
     </div>
+    <script>
+      const box = document.querySelector('.box');
+      window.onmousemove = function (e) {
+        let x = e.clientX / 3;
+        let y = e.clientY / 3;
+        box.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg)`;
+      };
+      const play = document.querySelector('#play');
+      play.addEventListener('click', (e) => {
+        box.classList.toggle('play');
+        if (play.textContent === 'Play') {
+          play.textContent = 'Pause';
+        } else {
+          play.textContent = 'Play';
+        }
+      });
+    </script>
   </body>
 </html>
