@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="play"><i class="fa fa-play"></i></button>
-    <div class="box">
+    <button id="play"><i class="fa fa-stop"></i></button>
+    <div class="box play">
       <span style="--i: 1;"><img src="img1.jpg" alt="" /></span>
       <span style="--i: 2;"><img src="img2.jpg" alt="" /></span>
       <span style="--i: 3;"><img src="img3.jpg" alt="" /></span>
@@ -34,10 +34,10 @@
       const play = document.querySelector('#play');
       play.addEventListener('click', (e) => {
         box.classList.toggle('play');
-        if (play.innerHTML === '<i class="fa fa-play"></i>') {
-          play.innerHTML = '<i class="fa fa-stop"></i>';
-        } else {
+        if (play.innerHTML === '<i class="fa fa-stop"></i>') {
           play.innerHTML = '<i class="fa fa-play"></i>';
+        } else {
+          play.innerHTML = '<i class="fa fa-stop"></i>';
         }
       });
     </script>
