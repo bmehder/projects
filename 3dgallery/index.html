@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="play">Play</button>
+    <button id="play"><i class="fa fa-play"></i></button>
     <div class="box">
       <span style="--i: 1;"><img src="img1.jpg" alt="" /></span>
       <span style="--i: 2;"><img src="img2.jpg" alt="" /></span>
@@ -28,10 +34,10 @@
       const play = document.querySelector('#play');
       play.addEventListener('click', (e) => {
         box.classList.toggle('play');
-        if (play.textContent === 'Play') {
-          play.textContent = 'Pause';
+        if (play.innerHTML === '<i class="fa fa-play"></i>') {
+          play.innerHTML = '<i class="fa fa-pause"></i>';
         } else {
-          play.textContent = 'Play';
+          play.innerHTML = '<i class="fa fa-play"></i>';
         }
       });
     </script>
