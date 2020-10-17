@@ -10,12 +10,6 @@ body {
   min-height: 100vh;
   background: #e8eaf6;
 }
-h1 {
-  text-align: center;
-  font-size: smaller;
-  padding: 5px;
-  color: darkorange;
-}
 .iPhone {
   position: relative;
   width: 230px;
