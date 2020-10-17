@@ -26,7 +26,7 @@ h1 {
   background-repeat: no-repeat;
   transform: rotate(-40deg) skew(20deg, 10deg);
   box-shadow: -120px 110px 5px rgba(0, 0, 0, 0.08);
-  transition: 0.5s;
+  transition: 3.2s;
 }
 .iPhone:hover {
   transform: rotate(-40deg) skew(20deg, 10deg) translate(30px, -30px);
