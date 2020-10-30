@@ -32,12 +32,12 @@ body::after {
 }
 .scroll-text {
   color: #ffc909;
-  font-size: 2vw;
+  font-size: 3vw;
   line-height: 1.5em;
   font-weight: bold;
   text-align: justify;
   position: relative;
-  animation: scroll 100s linear forwards;
+  animation: scroll 100s linear infinite;
 }
 h1,
 h2 {
