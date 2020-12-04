@@ -19,7 +19,10 @@ body {
   transform-origin: bottom;
   transform-style: preserve-3d;
   transform: perspective(500px) rotateX(30deg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), transparent);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2) inset;
 }
+
 .infinite::before {
   content: '';
   position: absolute;
