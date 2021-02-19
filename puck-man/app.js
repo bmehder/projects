@@ -35,7 +35,7 @@ const matrix = [
     1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
   ]
-const grid = document.querySelector('#grid');
+const grid = document.querySelector('#board');
 const scoreDisplay = document.querySelector('#score');
 const squareSize = 28;
 const squares = [];
@@ -57,10 +57,13 @@ class Ghost {
 }
 
 ghosts = [
-  new Ghost('blinky', 348, 250),
-  new Ghost('pinky', 376, 400),
+  // new Ghost('blinky', 348, 250),
+  // new Ghost('pinky', 376, 400),
   // new Ghost('inky', 351, 300),
-  new Ghost('inky', 30, 300),
+  // new Ghost('clyde', 379, 500),
+  new Ghost('blinky', 32, 250),
+  new Ghost('pinky', 500, 400),
+  new Ghost('inky', 250, 300),
   new Ghost('clyde', 379, 500),
 ];
 
