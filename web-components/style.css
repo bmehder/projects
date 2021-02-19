@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  font-family: sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+  color: #307ad5;
+}
+main {
+  max-width: 960px;
+  margin: 60px auto;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+mfs-countdown {
+  display: block;
+  margin: 40px 0;
+  padding: 1em;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+a {
+  color: darkorange;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code {
+  background: #ccc;
+  padding: 0 1em;
+}

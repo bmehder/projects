@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte Web Components</title>
+    <script defer src="mfs-countdown.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Svelte Web Component Example</h1>
+      <h2>MFS Countdown Element</h2>
+
+      <mfs-countdown
+        title="You Can Put A Title Here"
+        end="12/31/2021"
+      ></mfs-countdown>
+
+      <h3>Overview:</h3>
+      <p>
+        This is an example of using
+        <a href="https://svelte.dev/" target="_blank">Svelte</a> to create
+        (highly reusable and customizable) web components. This technique allows
+        developers to use Svelte to <em>sprinkle components</em> where they want
+        in their projects instead of <em>going nuclear</em> with Svelte - as in
+        using Svelte for the whole site or page.
+      </p>
+
+      <h3>Usage:</h3>
+      <ol>
+        <li>
+          <p>
+            Link to the javascript bundle either in the
+            <code>head</code>
+            element, before the closing
+            <code>body</code>
+            element, or inline in the page if you use the
+            <code>defer</code>
+            attribute in your
+            <code>script</code>
+            tag.
+          </p>
+          <p>
+            <code>
+              &lt;script defer src="mfs-countdown.js"&gt;&lt;/script&gt;
+            </code>
+          </p>
+        </li>
+        <li>
+          <p>
+            Display the custom element the same way you would use any other html
+            element.
+          </p>
+          <p>
+            <code> &lt;mfs-countdown&gt;&lt;/mfs-countdown&gt; </code>
+          </p>
+        </li>
+        <li>
+          <p>
+            Optionally, you can use component properties (or <em>props</em>) to
+            customize an element.
+          </p>
+
+          <p>
+            <code>
+              &lt;mfs-countdown title="You Can Put A Title Here"
+              end="12/31/2021" &gt;&lt;/mfs-countdown&gt;
+            </code>
+          </p>
+        </li>
+      </ol>
+      <p>
+        You can view the code for the component in my
+        <a
+          href="https://github.com/bmehder/mfs-countdown/blob/main/src/App.svelte"
+          target="_blank"
+          >Github Repo</a
+        >.
+      </p>
+    </main>
+  </body>
+</html>

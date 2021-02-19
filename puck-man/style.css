@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --board: 560px;
+  --squares: 28;
+  --dot: #c0e218;
+  --wall: #111d5e;
+  --pellet: grey;
+  --blinky: #c70039;
+  --inky: cyan;
+  --pinky: #f06;
+  --clyde: orange;
+  --pac-man: yellow;
+  --scared: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  width: var(--board);
+  height: var(--board);
+}
+
+#grid div {
+  width: calc(var(--board) / var(--squares));
+  height: calc(var(--board) / var(--squares));
+}
+
+h1,
+h3 {
+  font-family: 'VT323', monospace;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+  margin: 1em;
+}
+
+.pac-man {
+  background-color: var(--pac-man);
+  border: 1px solid #555;
+  border-radius: 50%;
+}
+
+.pac-dot {
+  background-color: var(--dot);
+  /* border-radius: 50%;
+  border: 5px solid white; */
+}
+
+.blinky {
+  background-color: var(--blinky);
+}
+
+.pinky {
+  background-color: var(--pinky);
+}
+
+.inky {
+  background-color: var(--inky);
+}
+
+.clyde {
+  background-color: var(--clyde);
+}
+
+.scared-ghost {
+  background-color: var(--scared);
+}
+
+.wall {
+  background-color: var(--wall);
+}
+
+.power-pellet {
+  background-color: var(--pellet);
+}
